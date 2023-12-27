@@ -20,8 +20,8 @@ example dxcli plugin in javascript
 $ npm install -g @oclif/example-plugin-js
 $ oclif-example COMMAND
 running command...
-$ oclif-example (-v|--version|version)
-@oclif/example-plugin-js/1.10.6 linux-x64 node-v15.11.0
+$ oclif-example (--version)
+@oclif/example-plugin-js/1.10.6 darwin-arm64 node-v18.16.1
 $ oclif-example --help [COMMAND]
 USAGE
   $ oclif-example COMMAND
@@ -30,22 +30,28 @@ USAGE
 <!-- usagestop -->
 # Commands
 <!-- commands -->
-* [`oclif-example hello`](#oclif-example-hello)
+* [`oclif-example hello PERSON`](#oclif-example-hello-person)
 
-## `oclif-example hello`
+## `oclif-example hello PERSON`
 
-Describe the command here
+Say hello
 
 ```
 USAGE
-  $ oclif-example hello
+  $ oclif-example hello PERSON -f <value>
 
-OPTIONS
-  -n, --name=name  name to print
+ARGUMENTS
+  PERSON  Person to say hello to
+
+FLAGS
+  -f, --from=<value>  (required) Who is saying hello
 
 DESCRIPTION
-  ...
-  Extra documentation goes here
+  Say hello
+
+EXAMPLES
+  $ oex hello friend --from oclif
+  hello friend from oclif! (./src/commands/hello/index.ts)
 ```
 
 _See code: [src/commands/hello.js](https://github.com/oclif/example-plugin-js/blob/v1.10.6/src/commands/hello.js)_
