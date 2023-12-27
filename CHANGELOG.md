@@ -1,5 +1,8 @@
-## [1.10.6](https://github.com/oclif/example-plugin-js/compare/v1.10.5...v1.10.6) (2018-09-14)
+## [2.0.0](https://github.com/montalvomiguelo/example-plugin-js/compare/v1.10.6...v2.0.0) (2023-12-28)
 
+### Changed
+
+* Migrating to @oclif/core from deprecated libraries ([#2](https://github.com/montalvomiguelo/example-plugin-js/pull/2))
 
 ### Bug Fixes
 
