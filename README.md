@@ -1,52 +1,80 @@
-@oclif/example-plugin-js
-========================
+# example-plugin-js
 
-example dxcli plugin in javascript
+example oclif plugin in javascript
 
 [![oclif](https://img.shields.io/badge/cli-oclif-brightgreen.svg)](https://oclif.io)
-[![Version](https://img.shields.io/npm/v/@oclif/example-plugin-js.svg)](https://npmjs.org/package/@oclif/example-plugin-js)
-[![CircleCI](https://circleci.com/gh/oclif/example-plugin-js/tree/master.svg?style=shield)](https://circleci.com/gh/oclif/example-plugin-js/tree/master)
-[![Appveyor CI](https://ci.appveyor.com/api/projects/status/github/oclif/example-plugin-js?branch=master&svg=true)](https://ci.appveyor.com/project/oclif/example-plugin-js/branch/master)
-[![Downloads/week](https://img.shields.io/npm/dw/@oclif/example-plugin-js.svg)](https://npmjs.org/package/@oclif/example-plugin-js)
+[![Build Status](https://github.com/montalvomiguelo/example-plugin-js/workflows/CI/badge.svg)](https://github.com/montalvomiguelo/example-plugin-js/actions)
 [![License](https://img.shields.io/npm/l/@oclif/example-plugin-js.svg)](https://github.com/oclif/example-plugin-js/blob/master/package.json)
 
 <!-- toc -->
+* [example-plugin-js](#example-plugin-js)
 * [Usage](#usage)
 * [Commands](#commands)
 <!-- tocstop -->
+
 # Usage
+
 <!-- usage -->
 ```sh-session
-$ npm install -g @oclif/example-plugin-js
-$ oclif-example COMMAND
+$ npm install -g example-plugin-js
+$ oex COMMAND
 running command...
-$ oclif-example (-v|--version|version)
-@oclif/example-plugin-js/1.10.6 linux-x64 node-v15.11.0
-$ oclif-example --help [COMMAND]
+$ oex (--version)
+example-plugin-js/2.0.0 darwin-arm64 node-v18.16.1
+$ oex --help [COMMAND]
 USAGE
-  $ oclif-example COMMAND
+  $ oex COMMAND
 ...
 ```
 <!-- usagestop -->
+
 # Commands
+
 <!-- commands -->
-* [`oclif-example hello`](#oclif-example-hello)
+* [`oex hello PERSON`](#oex-hello-person)
+* [`oex help [COMMANDS]`](#oex-help-commands)
 
-## `oclif-example hello`
+## `oex hello PERSON`
 
-Describe the command here
+Say hello
 
 ```
 USAGE
-  $ oclif-example hello
+  $ oex hello PERSON -f <value>
 
-OPTIONS
-  -n, --name=name  name to print
+ARGUMENTS
+  PERSON  Person to say hello to
+
+FLAGS
+  -f, --from=<value>  (required) Who is saying hello
 
 DESCRIPTION
-  ...
-  Extra documentation goes here
+  Say hello
+
+EXAMPLES
+  $ oex hello friend --from oclif
+  hello friend from oclif! (./src/commands/hello/index.ts)
 ```
 
-_See code: [src/commands/hello.js](https://github.com/oclif/example-plugin-js/blob/v1.10.6/src/commands/hello.js)_
+_See code: [src/commands/hello.js](https://github.com/oclif/example-plugin-js/blob/v2.0.0/src/commands/hello.js)_
+
+## `oex help [COMMANDS]`
+
+Display help for oex.
+
+```
+USAGE
+  $ oex help [COMMANDS] [-n]
+
+ARGUMENTS
+  COMMANDS  Command to show help for.
+
+FLAGS
+  -n, --nested-commands  Include all nested commands in the output.
+
+DESCRIPTION
+  Display help for oex.
+```
+
+_See code: [@oclif/plugin-help](https://github.com/oclif/plugin-help/blob/v5.2.18/src/commands/help.ts)_
 <!-- commandsstop -->
