@@ -53,7 +53,7 @@ DESCRIPTION
 
 EXAMPLES
   $ oex hello friend --from oclif
-  hello friend from oclif! (./src/commands/hello/index.ts)
+  hello friend from oclif! (./src/commands/hello/index.js)
 ```
 
 _See code: [src/commands/hello.js](https://github.com/oclif/example-plugin-js/blob/v2.0.0/src/commands/hello.js)_
