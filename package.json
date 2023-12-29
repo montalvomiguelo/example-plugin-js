@@ -12,10 +12,13 @@
     "@oclif/plugin-help": "5.2.18"
   },
   "devDependencies": {
+    "@oclif/prettier-config": "^0.2.1",
     "@oclif/test": "^2.3.15",
     "chai": "^4.3.7",
     "eslint": "^8",
     "eslint-config-oclif": "^5",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-prettier": "^5.1.2",
     "mocha": "^8.4.0",
     "oclif": "3.16.0"
   },
@@ -40,8 +43,9 @@
     ],
     "topicSeparator": " "
   },
-  "repository": "oclif/example-plugin-js",
+  "repository": "montalvomiguelo/example-plugin-js",
   "scripts": {
+    "format": "prettier --write --cache .",
     "lint": "eslint .",
     "postpack": "rm -f oclif.manifest.json",
     "posttest": "npm run lint",
