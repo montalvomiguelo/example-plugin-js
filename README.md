@@ -7,32 +7,36 @@ example oclif plugin in javascript
 [![License](https://img.shields.io/npm/l/@oclif/example-plugin-js.svg)](https://github.com/oclif/example-plugin-js/blob/master/package.json)
 
 <!-- toc -->
-* [example-plugin-js](#example-plugin-js)
-* [Usage](#usage)
-* [Commands](#commands)
+
+- [example-plugin-js](#example-plugin-js)
+- [Usage](#usage)
+- [Commands](#commands)
 <!-- tocstop -->
 
 # Usage
 
 <!-- usage -->
+
 ```sh-session
 $ npm install -g example-plugin-js
 $ oex COMMAND
 running command...
 $ oex (--version)
-example-plugin-js/2.0.0 darwin-arm64 node-v18.16.1
+example-plugin-js/2.0.1 darwin-arm64 node-v18.16.1
 $ oex --help [COMMAND]
 USAGE
   $ oex COMMAND
 ...
 ```
+
 <!-- usagestop -->
 
 # Commands
 
 <!-- commands -->
-* [`oex hello PERSON`](#oex-hello-person)
-* [`oex help [COMMANDS]`](#oex-help-commands)
+
+- [`oex hello PERSON`](#oex-hello-person)
+- [`oex help [COMMANDS]`](#oex-help-commands)
 
 ## `oex hello PERSON`
 
@@ -56,7 +60,7 @@ EXAMPLES
   hello friend from oclif! (./src/commands/hello/index.js)
 ```
 
-_See code: [src/commands/hello.js](https://github.com/montalvomiguelo/example-plugin-js/blob/v2.0.0/src/commands/hello.js)_
+_See code: [src/commands/hello.js](https://github.com/montalvomiguelo/example-plugin-js/blob/v2.0.1/src/commands/hello.js)_
 
 ## `oex help [COMMANDS]`
 
@@ -77,4 +81,5 @@ DESCRIPTION
 ```
 
 _See code: [@oclif/plugin-help](https://github.com/oclif/plugin-help/blob/v5.2.18/src/commands/help.ts)_
+
 <!-- commandsstop -->

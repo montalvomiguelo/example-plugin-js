@@ -1,7 +1,7 @@
 {
   "name": "example-plugin-js",
   "description": "example oclif plugin in javascript",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "author": "Jeff Dickey @jdxcode",
   "bin": {
     "oex": "./bin/run.js"

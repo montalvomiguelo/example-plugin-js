@@ -1,3 +1,9 @@
+## [2.0.1](https://github.com/montalvomiguelo/example-plugin-js/compare/v2.0.0...v2.0.1) (2023-12-29)
+
+### Changed
+
+- Add prettier ([#3](https://github.com/montalvomiguelo/example-plugin-js/pull/3))
+
 ## [2.0.0](https://github.com/montalvomiguelo/example-plugin-js/compare/v1.10.6...v2.0.0) (2023-12-28)
 
 ### Changed
