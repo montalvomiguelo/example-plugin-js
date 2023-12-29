@@ -7,14 +7,16 @@ example oclif plugin in javascript
 [![License](https://img.shields.io/npm/l/@oclif/example-plugin-js.svg)](https://github.com/oclif/example-plugin-js/blob/master/package.json)
 
 <!-- toc -->
-* [example-plugin-js](#example-plugin-js)
-* [Usage](#usage)
-* [Commands](#commands)
+
+- [example-plugin-js](#example-plugin-js)
+- [Usage](#usage)
+- [Commands](#commands)
 <!-- tocstop -->
 
 # Usage
 
 <!-- usage -->
+
 ```sh-session
 $ npm install -g example-plugin-js
 $ oex COMMAND
@@ -26,13 +28,15 @@ USAGE
   $ oex COMMAND
 ...
 ```
+
 <!-- usagestop -->
 
 # Commands
 
 <!-- commands -->
-* [`oex hello PERSON`](#oex-hello-person)
-* [`oex help [COMMANDS]`](#oex-help-commands)
+
+- [`oex hello PERSON`](#oex-hello-person)
+- [`oex help [COMMANDS]`](#oex-help-commands)
 
 ## `oex hello PERSON`
 
@@ -77,4 +81,5 @@ DESCRIPTION
 ```
 
 _See code: [@oclif/plugin-help](https://github.com/oclif/plugin-help/blob/v5.2.18/src/commands/help.ts)_
+
 <!-- commandsstop -->
