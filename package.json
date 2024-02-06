@@ -45,13 +45,13 @@
   },
   "repository": "montalvomiguelo/example-plugin-js",
   "scripts": {
-    "format": "prettier --write --cache .",
     "lint": "eslint --cache .",
     "postpack": "rm -f oclif.manifest.json",
     "posttest": "npm run lint",
     "prepack": "oclif manifest && oclif readme",
     "test": "mocha --forbid-only \"test/**/*.test.js\"",
-    "version": "oclif readme && git add README.md"
+    "version": "oclif readme && git add README.md",
+    "format": "prettier --write --cache ."
   },
   "type": "module"
 }
