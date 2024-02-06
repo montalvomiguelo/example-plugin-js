@@ -4,5 +4,5 @@
 ;(async () => {
   // eslint-disable-next-line node/no-unsupported-features/es-syntax
   const oclif = await import('@oclif/core')
-  await oclif.execute({type: 'esm', dir: import.meta.url})
+  await oclif.execute({dir: import.meta.url})
 })()
